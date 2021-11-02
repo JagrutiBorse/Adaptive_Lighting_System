@@ -1,6 +1,11 @@
-classdef Visual<Simulink.IntEnumType
+classdef Visual<uint8
     enumeration
-        Day_Mode(0)
-        Night_Mode(1)
+        Day_time(0)
+        Night_Time (1)
+    end
+    methods (Static)
+    function retVal = getDefaultValue()
+        retVal = Visual.Day_time;
+    end
     end
 end

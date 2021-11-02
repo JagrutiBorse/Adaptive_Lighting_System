@@ -1,6 +1,7 @@
-classdef Ignition<Simulink.IntEnumType
+classdef Ignition<uint8
     enumeration
-        Ignition_Off(0)
-        Ignition_On(1)
+        On(1)
+        Off(0)
     end
+    
 end
